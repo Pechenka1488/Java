@@ -16,7 +16,7 @@ public class Zad4 {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите число a: ");
         h = in.nextDouble();
-        t= Math.sqrt(2*h/9.8);
+        t= Math.sqrt(2*h*9.8);
         System.out.println("Время падения: "+t);
     }
 }

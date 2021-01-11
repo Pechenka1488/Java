@@ -12,10 +12,17 @@ import java.util.Scanner;
 public class Zad1 {
     public static void main(String[] args)
     {
-        int n;
+        double a;
         Scanner in = new Scanner(System.in);
         System.out.print("Введите число n: ");
-        n = in.nextInt();
+        a = in.nextDouble();
+        if ((a%1 != 0) || (a>9) || (a<0))
+        {
+            System.out.println("Некорректное число");
+        }
+        else
+        {
+        int n = (int)a;
         switch(n){
             case 0:
                System.out.println("0 это ноль");
@@ -47,6 +54,7 @@ public class Zad1 {
             case 9:
                System.out.println("9 это девять");
                break;   
+        }
         }
     } 
 }
